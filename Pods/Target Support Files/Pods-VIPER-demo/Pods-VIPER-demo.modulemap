@@ -1,0 +1,6 @@
+framework module Pods_VIPER_demo {
+  umbrella header "Pods-VIPER-demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
