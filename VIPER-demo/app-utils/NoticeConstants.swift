@@ -8,4 +8,6 @@
 
 import Foundation
 
-let REST_API:String = "https://api.myjson.com/bins/1bsqcn/"
+let API_NOTICE_LIST:String = "https://api.myjson.com/bins/1bsqcn/"
+let API_MOVIE_LIST:String = "https://api.myjson.com/bins/1h87n6"
+

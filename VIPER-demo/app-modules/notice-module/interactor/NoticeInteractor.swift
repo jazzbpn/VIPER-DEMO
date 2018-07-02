@@ -14,7 +14,7 @@ class NoticeInteractor: PresenterToInteractorProtocol{
     var presenter: InteractorToPresenterProtocol?
     
     func fetchNotice() {
-        Alamofire.request(REST_API).responseJSON { response in
+        Alamofire.request(API_NOTICE_LIST).responseJSON { response in
             
             if(response.response?.statusCode == 200){
                 if let json = response.result.value as AnyObject? {

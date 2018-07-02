@@ -17,7 +17,7 @@ class MyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presentor?.startFetchingNotice()
+        presentor?.startFetchingNotice()  
         
         uiTableView.delegate = self
         uiTableView.dataSource = self
@@ -54,7 +54,7 @@ extension MyViewController:UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PrototypeCell", for: indexPath) as! PrototypeCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NoticeCell
         cell.id.text = noticeArrayList[indexPath.row].id
         cell.title.text = noticeArrayList[indexPath.row].title
         cell.brief.text = noticeArrayList[indexPath.row].brief
@@ -63,12 +63,16 @@ extension MyViewController:UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+
+        
+    }
     
     
 }
 
-class PrototypeCell:UITableViewCell{
+class NoticeCell:UITableViewCell{
     
     @IBOutlet weak var id: UILabel!
     @IBOutlet weak var title: UILabel!

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4A0F17520EA22AF0088F11B /* MovieProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17420EA22AF0088F11B /* MovieProtocol.swift */; };
+		D4A0F17720EA25620088F11B /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17620EA25620088F11B /* MovieModel.swift */; };
+		D4A0F17920EA26C00088F11B /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17820EA26C00088F11B /* MovieViewController.swift */; };
+		D4A0F17B20EA26DB0088F11B /* MovieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17A20EA26DB0088F11B /* MovieRouter.swift */; };
+		D4A0F17D20EA29180088F11B /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17C20EA29180088F11B /* MoviePresenter.swift */; };
+		D4A0F17F20EA2B160088F11B /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17E20EA2B160088F11B /* MovieInteractor.swift */; };
 		D4D61A2D20E611B10087F31F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A2C20E611B10087F31F /* AppDelegate.swift */; };
 		D4D61A2F20E611B10087F31F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A2E20E611B10087F31F /* MyViewController.swift */; };
 		D4D61A3220E611B10087F31F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D61A3020E611B10087F31F /* Main.storyboard */; };
@@ -25,6 +31,12 @@
 		0D0EEC49C11BFBF6073020D4 /* Pods_VIPER_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D34FEC21DC1AE0AF72580EC /* Pods-VIPER-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER-demo/Pods-VIPER-demo.release.xcconfig"; sourceTree = "<group>"; };
 		C8524BEFDB7BE87E0061D65D /* Pods-VIPER-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER-demo/Pods-VIPER-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		D4A0F17420EA22AF0088F11B /* MovieProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProtocol.swift; sourceTree = "<group>"; };
+		D4A0F17620EA25620088F11B /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		D4A0F17820EA26C00088F11B /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		D4A0F17A20EA26DB0088F11B /* MovieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRouter.swift; sourceTree = "<group>"; };
+		D4A0F17C20EA29180088F11B /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
+		D4A0F17E20EA2B160088F11B /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
 		D4D61A2920E611B10087F31F /* VIPER-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D61A2C20E611B10087F31F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4D61A2E20E611B10087F31F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +72,75 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D4A0F16B20EA21C10088F11B /* movie-module */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0F17120EA22250088F11B /* view */,
+				D4A0F17020EA21F40088F11B /* presenter */,
+				D4A0F16F20EA21F10088F11B /* router */,
+				D4A0F16E20EA21EE0088F11B /* interactor */,
+				D4A0F16D20EA21EB0088F11B /* entity */,
+				D4A0F16C20EA21DB0088F11B /* protocols */,
+			);
+			path = "movie-module";
+			sourceTree = "<group>";
+		};
+		D4A0F16C20EA21DB0088F11B /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0F17420EA22AF0088F11B /* MovieProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		D4A0F16D20EA21EB0088F11B /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0F17620EA25620088F11B /* MovieModel.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		D4A0F16E20EA21EE0088F11B /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0F17E20EA2B160088F11B /* MovieInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		D4A0F16F20EA21F10088F11B /* router */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0F17A20EA26DB0088F11B /* MovieRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		D4A0F17020EA21F40088F11B /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0F17C20EA29180088F11B /* MoviePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		D4A0F17120EA22250088F11B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0F17820EA26C00088F11B /* MovieViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D4A0F17320EA22470088F11B /* app-utils */ = {
+			isa = PBXGroup;
+			children = (
+				D4D61A4F20E619530087F31F /* NoticeConstants.swift */,
+			);
+			path = "app-utils";
+			sourceTree = "<group>";
+		};
 		D4D61A2020E611B10087F31F = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +167,7 @@
 				D4D61A4820E613D40087F31F /* app-ui */,
 				D4D61A4720E6138E0087F31F /* app-settings */,
 				D4D61A4620E6136C0087F31F /* app-modules */,
+				D4A0F17320EA22470088F11B /* app-utils */,
 			);
 			path = "VIPER-demo";
 			sourceTree = "<group>";
@@ -99,17 +181,8 @@
 				D4D61A4320E613220087F31F /* router */,
 				D4D61A4220E613140087F31F /* presenter */,
 				D4D61A4120E6130E0087F31F /* view */,
-				D4D61A4020E613010087F31F /* constants */,
 			);
 			path = "notice-module";
-			sourceTree = "<group>";
-		};
-		D4D61A4020E613010087F31F /* constants */ = {
-			isa = PBXGroup;
-			children = (
-				D4D61A4F20E619530087F31F /* NoticeConstants.swift */,
-			);
-			path = constants;
 			sourceTree = "<group>";
 		};
 		D4D61A4120E6130E0087F31F /* view */ = {
@@ -156,6 +229,7 @@
 		D4D61A4620E6136C0087F31F /* app-modules */ = {
 			isa = PBXGroup;
 			children = (
+				D4A0F16B20EA21C10088F11B /* movie-module */,
 				D4D61A3E20E6122A0087F31F /* notice-module */,
 			);
 			path = "app-modules";
@@ -280,6 +354,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VIPER-demo/Pods-VIPER-demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -287,6 +362,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -321,11 +397,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A0F17D20EA29180088F11B /* MoviePresenter.swift in Sources */,
+				D4A0F17F20EA2B160088F11B /* MovieInteractor.swift in Sources */,
 				D4D61A5620E62B280087F31F /* NoticeRouter.swift in Sources */,
 				D4D61A5220E622C60087F31F /* NoticePresenter.swift in Sources */,
+				D4A0F17920EA26C00088F11B /* MovieViewController.swift in Sources */,
+				D4A0F17720EA25620088F11B /* MovieModel.swift in Sources */,
 				D4D61A4E20E617650087F31F /* NoticeModel.swift in Sources */,
+				D4A0F17B20EA26DB0088F11B /* MovieRouter.swift in Sources */,
 				D4D61A5420E626020087F31F /* NoticeInteractor.swift in Sources */,
 				D4D61A5020E619530087F31F /* NoticeConstants.swift in Sources */,
+				D4A0F17520EA22AF0088F11B /* MovieProtocol.swift in Sources */,
 				D4D61A2F20E611B10087F31F /* MyViewController.swift in Sources */,
 				D4D61A4C20E615DB0087F31F /* NoticeProtocols.swift in Sources */,
 				D4D61A2D20E611B10087F31F /* AppDelegate.swift in Sources */,

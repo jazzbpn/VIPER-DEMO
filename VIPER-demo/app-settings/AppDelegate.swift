@@ -16,11 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        let notice = NoticeRouter.createModule();
-        
-        window = UIWindow(frame: UIScreen.main.bounds);
+        let notice = NoticeRouter.createModule()
+//        let notice = MovieRouter.createMovieModule()
+
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = notice
-        window?.makeKeyAndVisible();
+        window?.makeKeyAndVisible()
 
         return true
     }
