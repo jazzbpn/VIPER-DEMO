@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MyViewController: UIViewController {
 
     var presentor:ViewToPresenterProtocol?
     
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController:PresenterToViewProtocol{
+extension MyViewController:PresenterToViewProtocol{
     
     func showNotice(noticeArray: Array<NoticeModel>) {
 
@@ -47,7 +47,7 @@ extension ViewController:PresenterToViewProtocol{
     
 }
 
-extension ViewController:UITableViewDelegate, UITableViewDataSource{
+extension MyViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return noticeArrayList.count
     }

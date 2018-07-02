@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D4D61A2D20E611B10087F31F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A2C20E611B10087F31F /* AppDelegate.swift */; };
-		D4D61A2F20E611B10087F31F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A2E20E611B10087F31F /* ViewController.swift */; };
+		D4D61A2F20E611B10087F31F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A2E20E611B10087F31F /* MyViewController.swift */; };
 		D4D61A3220E611B10087F31F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D61A3020E611B10087F31F /* Main.storyboard */; };
 		D4D61A3420E611B20087F31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D61A3320E611B20087F31F /* Assets.xcassets */; };
 		D4D61A3720E611B20087F31F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D61A3520E611B20087F31F /* LaunchScreen.storyboard */; };
@@ -27,7 +27,7 @@
 		C8524BEFDB7BE87E0061D65D /* Pods-VIPER-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER-demo/Pods-VIPER-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		D4D61A2920E611B10087F31F /* VIPER-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D61A2C20E611B10087F31F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4D61A2E20E611B10087F31F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4D61A2E20E611B10087F31F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		D4D61A3120E611B10087F31F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4D61A3320E611B20087F31F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4D61A3620E611B20087F31F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			path = "VIPER-demo";
 			sourceTree = "<group>";
 		};
-		D4D61A3E20E6122A0087F31F /* login-module */ = {
+		D4D61A3E20E6122A0087F31F /* notice-module */ = {
 			isa = PBXGroup;
 			children = (
 				D4D61A4A20E615AA0087F31F /* protocols */,
@@ -101,7 +101,7 @@
 				D4D61A4120E6130E0087F31F /* view */,
 				D4D61A4020E613010087F31F /* constants */,
 			);
-			path = "login-module";
+			path = "notice-module";
 			sourceTree = "<group>";
 		};
 		D4D61A4020E613010087F31F /* constants */ = {
@@ -115,7 +115,7 @@
 		D4D61A4120E6130E0087F31F /* view */ = {
 			isa = PBXGroup;
 			children = (
-				D4D61A2E20E611B10087F31F /* ViewController.swift */,
+				D4D61A2E20E611B10087F31F /* MyViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 		D4D61A4620E6136C0087F31F /* app-modules */ = {
 			isa = PBXGroup;
 			children = (
-				D4D61A3E20E6122A0087F31F /* login-module */,
+				D4D61A3E20E6122A0087F31F /* notice-module */,
 			);
 			path = "app-modules";
 			sourceTree = "<group>";
@@ -326,7 +326,7 @@
 				D4D61A4E20E617650087F31F /* NoticeModel.swift in Sources */,
 				D4D61A5420E626020087F31F /* NoticeInteractor.swift in Sources */,
 				D4D61A5020E619530087F31F /* NoticeConstants.swift in Sources */,
-				D4D61A2F20E611B10087F31F /* ViewController.swift in Sources */,
+				D4D61A2F20E611B10087F31F /* MyViewController.swift in Sources */,
 				D4D61A4C20E615DB0087F31F /* NoticeProtocols.swift in Sources */,
 				D4D61A2D20E611B10087F31F /* AppDelegate.swift in Sources */,
 			);
