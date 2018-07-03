@@ -9,8 +9,6 @@ target 'VIPER-demo' do
 
     pod 'Alamofire', '~> 4.0'
     pod 'AlamofireImage', '~> 3.3'
-
     pod 'AlamofireObjectMapper', '~> 4.0'
-    pod 'NVActivityIndicatorView'
 
 end

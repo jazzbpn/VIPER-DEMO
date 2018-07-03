@@ -137,14 +137,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		D4A0F17320EA22470088F11B /* app-utils */ = {
+		D4A0F17320EA22470088F11B /* common-utils */ = {
 			isa = PBXGroup;
 			children = (
+				D4E6799320EB41F300D8700F /* AppUtils.swift */,
 				D4E6799020EB416F00D8700F /* ui-utils */,
 				D4E6798F20EB415D00D8700F /* app-constants */,
-				D4D61A4F20E619530087F31F /* AppConstants.swift */,
 			);
-			path = "app-utils";
+			path = "common-utils";
 			sourceTree = "<group>";
 		};
 		D4D61A2020E611B10087F31F = {
@@ -173,7 +173,7 @@
 				D4D61A4820E613D40087F31F /* app-ui */,
 				D4D61A4720E6138E0087F31F /* app-settings */,
 				D4D61A4620E6136C0087F31F /* app-modules */,
-				D4A0F17320EA22470088F11B /* app-utils */,
+				D4A0F17320EA22470088F11B /* common-utils */,
 			);
 			path = "VIPER-demo";
 			sourceTree = "<group>";
@@ -235,8 +235,8 @@
 		D4D61A4620E6136C0087F31F /* app-modules */ = {
 			isa = PBXGroup;
 			children = (
-				D4A0F16B20EA21C10088F11B /* movie-module */,
 				D4D61A3E20E6122A0087F31F /* notice-module */,
+				D4A0F16B20EA21C10088F11B /* movie-module */,
 			);
 			path = "app-modules";
 			sourceTree = "<group>";
@@ -277,6 +277,7 @@
 		D4E6798F20EB415D00D8700F /* app-constants */ = {
 			isa = PBXGroup;
 			children = (
+				D4D61A4F20E619530087F31F /* AppConstants.swift */,
 			);
 			path = "app-constants";
 			sourceTree = "<group>";
@@ -285,7 +286,6 @@
 			isa = PBXGroup;
 			children = (
 				D4E6799120EB418500D8700F /* ProgressIndicator.swift */,
-				D4E6799320EB41F300D8700F /* AppUtils.swift */,
 			);
 			path = "ui-utils";
 			sourceTree = "<group>";
@@ -378,7 +378,6 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -386,7 +385,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,10 +582,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B56F2CE99Y;
 				INFOPLIST_FILE = "VIPER-demo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bipin.three60.VIPER-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -603,10 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B56F2CE99Y;
 				INFOPLIST_FILE = "VIPER-demo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bipin.three60.VIPER-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
