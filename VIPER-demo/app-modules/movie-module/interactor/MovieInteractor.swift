@@ -20,7 +20,7 @@ class MovieInteractor:PresenterToInteractorMovieProtocol{
             
             if(response.response?.statusCode == 200){
                 if let json = response.result.value as AnyObject? {
-                    let arrayResponse = json["notice_list"] as! NSArray
+                    let arrayResponse = json["movie_list"] as! NSArray
                     let arrayObject = Mapper<MovieModel>().mapArray(JSONArray: arrayResponse as! [[String : Any]]);
                     self.presenter?.movieFetchSuccess(movieList: arrayObject)
                 }

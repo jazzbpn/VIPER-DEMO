@@ -26,7 +26,7 @@ protocol PresenterToViewMovieProtocol:class {
 
 protocol PresenterToRouterMovieProtocol:class {
     
-    func createMovieModule()->MovieViewController
+    static func createMovieModule()->MovieViewController
 
 }
 

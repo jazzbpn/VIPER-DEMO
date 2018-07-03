@@ -14,16 +14,18 @@
 		D4A0F17D20EA29180088F11B /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17C20EA29180088F11B /* MoviePresenter.swift */; };
 		D4A0F17F20EA2B160088F11B /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0F17E20EA2B160088F11B /* MovieInteractor.swift */; };
 		D4D61A2D20E611B10087F31F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A2C20E611B10087F31F /* AppDelegate.swift */; };
-		D4D61A2F20E611B10087F31F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A2E20E611B10087F31F /* MyViewController.swift */; };
+		D4D61A2F20E611B10087F31F /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A2E20E611B10087F31F /* NoticeViewController.swift */; };
 		D4D61A3220E611B10087F31F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D61A3020E611B10087F31F /* Main.storyboard */; };
 		D4D61A3420E611B20087F31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D61A3320E611B20087F31F /* Assets.xcassets */; };
 		D4D61A3720E611B20087F31F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D61A3520E611B20087F31F /* LaunchScreen.storyboard */; };
 		D4D61A4C20E615DB0087F31F /* NoticeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A4B20E615DB0087F31F /* NoticeProtocols.swift */; };
 		D4D61A4E20E617650087F31F /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A4D20E617650087F31F /* NoticeModel.swift */; };
-		D4D61A5020E619530087F31F /* NoticeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A4F20E619530087F31F /* NoticeConstants.swift */; };
+		D4D61A5020E619530087F31F /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A4F20E619530087F31F /* AppConstants.swift */; };
 		D4D61A5220E622C60087F31F /* NoticePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A5120E622C60087F31F /* NoticePresenter.swift */; };
 		D4D61A5420E626020087F31F /* NoticeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A5320E626020087F31F /* NoticeInteractor.swift */; };
 		D4D61A5620E62B280087F31F /* NoticeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D61A5520E62B280087F31F /* NoticeRouter.swift */; };
+		D4E6799220EB418500D8700F /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E6799120EB418500D8700F /* ProgressIndicator.swift */; };
+		D4E6799420EB41F300D8700F /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E6799320EB41F300D8700F /* AppUtils.swift */; };
 		FDA32DF59E2D3C95BFCD70B6 /* Pods_VIPER_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0EEC49C11BFBF6073020D4 /* Pods_VIPER_demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,17 +41,19 @@
 		D4A0F17E20EA2B160088F11B /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
 		D4D61A2920E611B10087F31F /* VIPER-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D61A2C20E611B10087F31F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4D61A2E20E611B10087F31F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		D4D61A2E20E611B10087F31F /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		D4D61A3120E611B10087F31F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4D61A3320E611B20087F31F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4D61A3620E611B20087F31F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4D61A3820E611B20087F31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4D61A4B20E615DB0087F31F /* NoticeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeProtocols.swift; sourceTree = "<group>"; };
 		D4D61A4D20E617650087F31F /* NoticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
-		D4D61A4F20E619530087F31F /* NoticeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeConstants.swift; sourceTree = "<group>"; };
+		D4D61A4F20E619530087F31F /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		D4D61A5120E622C60087F31F /* NoticePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
 		D4D61A5320E626020087F31F /* NoticeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeInteractor.swift; sourceTree = "<group>"; };
 		D4D61A5520E62B280087F31F /* NoticeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeRouter.swift; sourceTree = "<group>"; };
+		D4E6799120EB418500D8700F /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		D4E6799320EB41F300D8700F /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +140,9 @@
 		D4A0F17320EA22470088F11B /* app-utils */ = {
 			isa = PBXGroup;
 			children = (
-				D4D61A4F20E619530087F31F /* NoticeConstants.swift */,
+				D4E6799020EB416F00D8700F /* ui-utils */,
+				D4E6798F20EB415D00D8700F /* app-constants */,
+				D4D61A4F20E619530087F31F /* AppConstants.swift */,
 			);
 			path = "app-utils";
 			sourceTree = "<group>";
@@ -188,7 +194,7 @@
 		D4D61A4120E6130E0087F31F /* view */ = {
 			isa = PBXGroup;
 			children = (
-				D4D61A2E20E611B10087F31F /* MyViewController.swift */,
+				D4D61A2E20E611B10087F31F /* NoticeViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -266,6 +272,22 @@
 				D4D61A4B20E615DB0087F31F /* NoticeProtocols.swift */,
 			);
 			path = protocols;
+			sourceTree = "<group>";
+		};
+		D4E6798F20EB415D00D8700F /* app-constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "app-constants";
+			sourceTree = "<group>";
+		};
+		D4E6799020EB416F00D8700F /* ui-utils */ = {
+			isa = PBXGroup;
+			children = (
+				D4E6799120EB418500D8700F /* ProgressIndicator.swift */,
+				D4E6799320EB41F300D8700F /* AppUtils.swift */,
+			);
+			path = "ui-utils";
 			sourceTree = "<group>";
 		};
 		DFCA8B60E1BA92EAEDB53958 /* Pods */ = {
@@ -406,10 +428,12 @@
 				D4D61A4E20E617650087F31F /* NoticeModel.swift in Sources */,
 				D4A0F17B20EA26DB0088F11B /* MovieRouter.swift in Sources */,
 				D4D61A5420E626020087F31F /* NoticeInteractor.swift in Sources */,
-				D4D61A5020E619530087F31F /* NoticeConstants.swift in Sources */,
+				D4D61A5020E619530087F31F /* AppConstants.swift in Sources */,
 				D4A0F17520EA22AF0088F11B /* MovieProtocol.swift in Sources */,
-				D4D61A2F20E611B10087F31F /* MyViewController.swift in Sources */,
+				D4E6799420EB41F300D8700F /* AppUtils.swift in Sources */,
+				D4D61A2F20E611B10087F31F /* NoticeViewController.swift in Sources */,
 				D4D61A4C20E615DB0087F31F /* NoticeProtocols.swift in Sources */,
+				D4E6799220EB418500D8700F /* ProgressIndicator.swift in Sources */,
 				D4D61A2D20E611B10087F31F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

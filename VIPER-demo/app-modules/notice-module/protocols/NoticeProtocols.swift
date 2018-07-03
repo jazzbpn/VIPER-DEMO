@@ -23,7 +23,7 @@ protocol PresenterToViewProtocol: class{
 }
 
 protocol PresenterToRouterProtocol: class {
-    static func createModule()-> MyViewController
+    static func createModule()-> NoticeViewController
 }
 
 protocol PresenterToInteractorProtocol: class {

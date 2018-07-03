@@ -19,12 +19,14 @@ class MovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.title = "Movie-Module"
         moviePresenter?.startFetchingMovie()
+        showProgressIndicator(view: self.view)
         
         myTableView.delegate = self
         myTableView.dataSource = self
 
-        
     }
 
 }
@@ -35,11 +37,13 @@ extension MovieViewController:PresenterToViewMovieProtocol{
         
         self.arrayList = movieModelArrayList
         self.myTableView.reloadData()
+        hideProgressIndicator(view: self.view)
         
     }
     
     func onMovieResponseFailed(error: String) {
         
+        hideProgressIndicator(view: self.view)
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching Notice", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
@@ -81,7 +85,6 @@ class MovieCell:UITableViewCell{
     @IBOutlet weak var mImageView: UIImageView!
     @IBOutlet weak var mTitle: UILabel!
     @IBOutlet weak var mDescription: UILabel!
-    
     
 }
 

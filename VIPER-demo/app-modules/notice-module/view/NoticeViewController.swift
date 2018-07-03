@@ -25,9 +25,7 @@ class NoticeViewController: UIViewController {
         uiTableView.delegate = self
         uiTableView.dataSource = self
         
-        
-    }
-
+        }
 }
 
 extension NoticeViewController:PresenterToViewProtocol{

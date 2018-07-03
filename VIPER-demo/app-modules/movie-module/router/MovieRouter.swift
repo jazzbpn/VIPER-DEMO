@@ -11,9 +11,9 @@ import UIKit
 
 class MovieRouter:PresenterToRouterMovieProtocol{
     
-    func createMovieModule() -> MovieViewController {
+    static func createMovieModule() -> MovieViewController {
         
-        let view = MovieRouter.mainstoryboard2.instantiateViewController(withIdentifier: "MovieViewController") as! MovieViewController
+        let view = MovieRouter.mainstoryboard.instantiateViewController(withIdentifier: "MovieViewController") as! MovieViewController
         
         let presenter: ViewToPresenterMovieProtocol & InteractorToPresenterMovieProtocol = MoviePresenter()
         let interactor: PresenterToInteractorMovieProtocol = MovieInteractor()
@@ -29,7 +29,7 @@ class MovieRouter:PresenterToRouterMovieProtocol{
         
     }
     
-    static var mainstoryboard2: UIStoryboard{
+    static var mainstoryboard: UIStoryboard{
         return UIStoryboard(name:"Main",bundle: Bundle.main)
     }
     

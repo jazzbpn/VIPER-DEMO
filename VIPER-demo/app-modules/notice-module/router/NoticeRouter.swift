@@ -11,9 +11,9 @@ import UIKit
 
 class NoticeRouter:PresenterToRouterProtocol{
     
-    static func createModule() -> MyViewController {
+    static func createModule() -> NoticeViewController {
         
-        let view = mainstoryboard.instantiateViewController(withIdentifier: "MyViewController") as! MyViewController
+        let view = mainstoryboard.instantiateViewController(withIdentifier: "MyViewController") as! NoticeViewController
         
         let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = NoticePresenter()
         let interactor: PresenterToInteractorProtocol = NoticeInteractor()
