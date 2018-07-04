@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class NoticePresenter:ViewToPresenterProtocol {
     
@@ -20,6 +21,10 @@ class NoticePresenter:ViewToPresenterProtocol {
         interactor?.fetchNotice()
     }
     
+    func showMovieController(navigationController: UINavigationController) {
+        router?.pushToMovieScreen(navigationConroller:navigationController)
+    }
+
 }
 
 extension NoticePresenter: InteractorToPresenterProtocol{

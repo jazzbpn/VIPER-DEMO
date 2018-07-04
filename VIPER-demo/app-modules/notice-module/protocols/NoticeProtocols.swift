@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ViewToPresenterProtocol: class{
     
@@ -14,7 +15,8 @@ protocol ViewToPresenterProtocol: class{
     var interactor: PresenterToInteractorProtocol? {get set}
     var router: PresenterToRouterProtocol? {get set}
     func startFetchingNotice()
-    
+    func showMovieController(navigationController:UINavigationController)
+
 }
 
 protocol PresenterToViewProtocol: class{
@@ -24,6 +26,7 @@ protocol PresenterToViewProtocol: class{
 
 protocol PresenterToRouterProtocol: class {
     static func createModule()-> NoticeViewController
+    func pushToMovieScreen(navigationConroller:UINavigationController)
 }
 
 protocol PresenterToInteractorProtocol: class {

@@ -68,8 +68,7 @@ extension NoticeViewController:UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let movieModule = MovieRouter.createMovieModule()
-        navigationController?.pushViewController(movieModule,animated: true)
+        presentor?.showMovieController(navigationController: navigationController!)
 
     }
     

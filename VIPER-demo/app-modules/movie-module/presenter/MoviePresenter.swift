@@ -20,7 +20,6 @@ class MoviePresenter:ViewToPresenterMovieProtocol{
         interactor?.fetchMovie()
     }
     
-    
 }
 
 extension MoviePresenter:InteractorToPresenterMovieProtocol{
