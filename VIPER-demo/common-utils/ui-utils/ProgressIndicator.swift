@@ -18,7 +18,7 @@ class ProgressIndicator: UIVisualEffectView {
         }
     }
     
-    let activityIndictor: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
+    let activityIndictor: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.whiteLarge)
     let label: UILabel = UILabel()
     let blurEffect = UIBlurEffect(style: .dark)
     let vibrancyView: UIVisualEffectView
