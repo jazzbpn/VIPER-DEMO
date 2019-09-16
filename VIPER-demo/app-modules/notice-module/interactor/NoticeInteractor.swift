@@ -18,7 +18,7 @@ class NoticeInteractor: PresenterToInteractorProtocol{
             
             if(response.response?.statusCode == 200){
                 if let json = response.result.value as AnyObject? {
-                    let arrayResponse = json["notice_list"] as! NSArray
+                    let arrayResponse = (json["notice_list"] as? NSArray) ?? NSArray()
                     let arrayObject = Mapper<NoticeModel>().mapArray(JSONArray: arrayResponse as! [[String : Any]]);
                     self.presenter?.noticeFetchedSuccess(noticeModelArray: arrayObject)
                 }
@@ -27,8 +27,4 @@ class NoticeInteractor: PresenterToInteractorProtocol{
             }
         }
     }
-    
-    
-    
-    
 }
